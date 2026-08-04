@@ -12,8 +12,8 @@ We were inspired to create an **AI Medical Assistant** that automates early-stag
 [Application Demo Video](https://vimeo.com/1128464969/a7f24f5dae?share=copy&fl=sv&fe=ci) - Video hyperlink demonstrating the usage of application
 
 ---
-## Test our deployed application
-[AI Medical Assistant Application](http://ai-medical-assistant-1773395845.us-east-1.elb.amazonaws.com/) - Click the hyperlink to test the application
+~~## Test our deployed application
+[AI Medical Assistant Application](http://ai-medical-assistant-1773395845.us-east-1.elb.amazonaws.com/) - Click the hyperlink to test the application~~
 
 ---
 ## Source Dataset:
