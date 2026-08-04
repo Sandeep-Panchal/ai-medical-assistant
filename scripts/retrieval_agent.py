@@ -57,14 +57,6 @@ class MedicalDataRetrieval:
 
         response = self.opensearch.search(index=self.index_name, body=query)
 
-        # print(f"🧠 Disease: {results["hits"]["hits"][0]["_score"]}")
-        # print(f"🧠 Disease: {results["hits"]["hits"][0]["_source"]["disease"]}")
-        # print(f"Description: {results["hits"]["hits"][0]["_source"]["combined_text"]}\n")
-
-        # if response:
-        #     score = response["hits"]["hits"][0]["_score"]
-        #     if score >= self.retrieve_threshold:
-
         if response:
             result = response["hits"]["hits"][0]["_source"]["combined_text"]
 
@@ -88,9 +80,3 @@ if __name__ == "__main__":
     results = store.retrieve_data(query)
 
     print(results)
-    
-    # print("🔍 Top results:")
-    # for r in results:
-    #     print(f"🧠 Disease: {r.metadata['disease']}")
-    #     print(f"🧠 Disease: {r.metadata['source']}")
-    #     print(f"Snippet: {r.page_content}")
